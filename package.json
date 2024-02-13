@@ -1,0 +1,12 @@
+{
+  "name": "raven",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "lessc raven.less build/raven.css"
+  },
+  "devDependencies": {
+    "less": "^4.2.0"
+  }
+}

@@ -1,0 +1,81 @@
+figure {
+  // vertical margin
+  margin: 10px 0;
+
+  img {
+    // decrease bottom margin
+    margin-bottom: 4px;
+  }
+
+  figcaption {
+    // decrease font size
+    font-size: 0.95rem;
+
+    // italic font
+    font-style: italic;
+  }
+}
+
+table {
+  // collapse borders
+  border-collapse: collapse;
+
+  // hide outside borders
+  border-style: hidden;
+
+  th, td {
+    // text alignment
+    text-align: left;
+
+    // cell padding
+    padding: 6px 8px;
+
+    // surrounding border
+    border: 1px solid var(--fg);
+  }
+
+  th {
+    // increase bottom border width
+    border-bottom-width: 2px;
+  }
+}
+
+details {
+  // bottom margin
+  margin-bottom: 8px;
+
+  // text padding
+  padding: 6px 8px;
+
+  // surrounding border
+  border: 1px dotted var(--fg);
+  border-left-style: solid;
+
+  summary {
+    // pointer cursor
+    cursor: pointer;
+
+    &::marker {
+      // monospace font
+      font-family: Menlo, monospace;
+
+      // closed marker
+      content: '+ ';
+    }
+  }
+
+  &[open] summary::marker {
+    // opened marker
+    content: '- ';
+  }
+
+  > :nth-child(2) {
+    // top margin
+    margin-top: 6px;
+  }
+
+  :last-child {
+    // remove bottom margin
+    margin-bottom: 0;
+  }
+}
