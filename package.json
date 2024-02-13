@@ -1,5 +1,6 @@
 {
   "name": "raven",
+  "license": "MIT",
   "scripts": {
     "build": "lessc raven.less build/raven.css"
   },
