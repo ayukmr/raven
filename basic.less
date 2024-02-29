@@ -1,3 +1,8 @@
+:focus-visible {
+  // focus outline
+  outline: 1px solid var(--fg2);
+}
+
 h1, h2, h3,
 h4, h5, h6 {
   // vertical margin
@@ -11,15 +16,23 @@ header h1 {
 
 a {
   // link color
-  color: var(--accent);
+  color: var(--link);
 
   // text underline
   text-decoration: underline;
+
+  &:active {
+    // active color
+    color: var(--link2);
+  }
 }
 
 code {
   // monospace font
   font-family: Menlo, monospace;
+
+  // font size
+  font-size: 0.9rem;
 }
 
 img {
@@ -36,7 +49,7 @@ hr {
   margin: 25px 0;
 
   // ruler color
-  border: 0.5px solid var(--fg2);
+  border: 0.5px solid var(--fg3);
 }
 
 ul, ol {
@@ -45,14 +58,22 @@ ul, ol {
 }
 
 pre {
-  // font size
-  font-size: 0.85rem;
+  // background color
+  background: var(--bg3);
 
   // text padding
   padding: 8px 10px;
 
   // surrounding border
-  border: 1px dotted var(--fg);
+  border: 1px dotted var(--fg3);
+
+  // increase line hieight
+  line-height: 1.2;
+
+  code {
+    // font size
+    font-size: 0.8rem;
+  }
 }
 
 blockquote {
@@ -60,8 +81,11 @@ blockquote {
   margin-left: 0;
 
   // left border
-  border-left: 2px solid var(--fg);
+  border-left: 2px solid var(--fg3);
 
   // text padding
-  padding: 6px 10px;
+  padding: 6px 0 6px 12px;
+
+  // italic text
+  font-style: italic;
 }

@@ -17,11 +17,11 @@ figure {
 }
 
 table {
+  // background color
+  background: var(--bg3);
+
   // collapse borders
   border-collapse: collapse;
-
-  // hide outside borders
-  border-style: hidden;
 
   th, td {
     // text alignment
@@ -31,16 +31,23 @@ table {
     padding: 4px 7px;
 
     // surrounding border
-    border: 1px solid var(--fg);
+    border: 1px solid var(--fg3);
   }
 
   th {
-    // increase bottom border width
-    border-bottom-width: 2px;
+    // header background
+    background: var(--bg4);
+
+    // sticky header
+    top: 0;
+    position: sticky;
   }
 }
 
 details {
+  // background color
+  background: var(--bg3);
+
   // bottom margin
   margin-bottom: 8px;
 
@@ -48,7 +55,7 @@ details {
   padding: 4px 7px;
 
   // surrounding border
-  border: 1px dotted var(--fg);
+  border: 1px dotted var(--fg3);
   border-left-style: solid;
 
   summary {
