@@ -63,17 +63,30 @@ details {
     cursor: pointer;
 
     &::marker {
-      // monospace font
-      font-family: Menlo, monospace;
+      // hide marker
+      content: '';
+    }
 
-      // closed marker
-      content: '+ ';
+    &::before {
+      // show caret
+      content: '';
+      display: inline-block;
+      background-image: var(--caret);
+
+      // adjust sizing
+      width:  20px;
+      height: 15px;
+
+      // right caret
+      rotate:    -90deg;
+      translate: -4px 0.5px;
     }
   }
 
-  &[open] summary::marker {
-    // opened marker
-    content: '- ';
+  &[open] summary::before {
+    // down caret
+    rotate:    0deg;
+    translate: -3px 0;
   }
 
   > :nth-child(2) {
