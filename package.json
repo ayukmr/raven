@@ -2,7 +2,7 @@
   "name": "raven",
   "license": "MIT",
   "scripts": {
-    "build": "lessc raven.less build/raven.css"
+    "build": "lessc raven.less public/raven.css"
   },
   "devDependencies": {
     "less": "^4.2.0"
